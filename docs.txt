@@ -1,0 +1,130 @@
+Important Credentials 
+mongodb Cluster name : e-portal
+username : pratham5685
+password : EhqAijLm4sGUY4q6
+
+
+
+// Test Credentials 
+
+1) court staff 
+username : abhi
+password : abhi
+44
+
+
+Here's a high-level overview of the next steps:
+
+Step 6: Build Role-Specific Dashboards
+
+For each role (Parties Involved, Lawyers, Judges), create role-specific dashboards that display information and actions relevant to that role. This includes viewing cases associated with the role and taking actions like reviewing case details.
+
+Step 7: Case Listing for Parties Involved
+
+Implement the case listing feature for Parties Involved. They should be able to see a list of cases they are involved in. You can create a dedicated route and view for this.
+
+Step 8: Case Listing for Lawyers
+
+Implement the case listing feature for Lawyers. They should see a list of cases they are representing. Lawyers should also be able to view case details and submit documents related to their cases.
+
+Step 9: Case Listing for Judges
+
+Implement the case listing feature for Judges. Judges should see a list of cases assigned to them. They should be able to view case details, update case statuses, and access case history.
+
+Step 10: Document Management
+
+Create functionality for uploading, viewing, and managing case-related documents. Parties Involved, Lawyers, and Judges may need to upload and access documents, so ensure proper access control.
+
+Step 11: Real-time Notifications
+
+Implement real-time notifications to keep users informed about important events, such as upcoming hearings, new document submissions, or case status updates.
+
+Step 12: Search and Filter
+
+Add search and filter functionality to allow users to efficiently locate specific cases or documents based on criteria such as case number, parties involved, or case type.
+
+Please let me know which specific step you'd like to start with, and I can provide you with code examples and guidance for that step. Alternatively, if you have any questions or need further clarification on any aspect, feel free to ask!
+
+
+
+
+
+
+
+
+
+
+
+Step 6: Build Role-Specific Dashboards
+
+In this step, we'll implement the Court Staff Dashboard. The Court Staff Dashboard should allow Court Staff members to create cases and assign judges to those cases.
+
+Here's a breakdown of the tasks:
+
+Create a Court Staff Dashboard Page: Create an HTML file (e.g., court-staff-dashboard.html) that serves as the dashboard for Court Staff. This page should have a form for creating new cases and assigning judges.
+
+Implement Case Creation Form: In the Court Staff Dashboard HTML, create a form that includes fields for case information like case number, parties involved, case type, etc. The Court Staff should be able to fill in this information.
+
+Implement Judge Assignment: In the same form, include a dropdown or input field where Court Staff can assign a judge to the case. You can populate this dropdown with the available judges from your database.
+
+Handle Form Submission: Implement a POST route in your app.js that handles the form submission. When the Court Staff submits the form, the data should be saved to the database as a new case, including the assigned judge.
+
+Display Confirmation: After successfully creating a case and assigning a judge, display a confirmation message to the Court Staff.
+
+Validation: Implement validation to ensure that all required fields are filled in before submitting the form. If any fields are missing or invalid, display an error message.
+
+Once you've completed these steps for the Court Staff Dashboard, you can similarly create dashboards and implement features for other roles (Parties Involved, Lawyer, Judge) following the same principles.
+
+Please start with the Court Staff Dashboard and let me know if you have any specific questions or if you encounter any issues during this implementation. Once the Court Staff Dashboard is working, we can proceed with the other role-specific dashboards.
+
+
+
+
+Possible Case Status Values:
+
+Open: The case is active and currently undergoing legal proceedings.
+Closed: The case has been resolved, and legal proceedings have concluded.
+Pending: The case is waiting for further action or information.
+Suspended: Legal proceedings for the case have been temporarily halted.
+Dismissed: The case has been dismissed, and no further legal action will be taken.
+In Progress: The case is actively being worked on but is not yet resolved.
+Possible Case Type Values:
+
+Civil: Cases involving disputes between individuals, organizations, or entities, excluding criminal matters.
+Criminal: Cases involving alleged criminal activities and offenses.
+Family: Cases related to family matters, such as divorce, child custody, and adoption.
+Commercial: Cases involving business transactions, contracts, and commercial disputes.
+Real Estate: Cases related to property ownership, real estate transactions, and land disputes.
+Personal Injury: Cases involving injuries or harm to individuals, often related to accidents or negligence.
+Employment: Cases related to workplace disputes, labor laws, and employment contracts.
+Environmental: Cases concerning environmental regulations, pollution, and conservation.
+Administrative: Cases involving government agencies, regulations, and administrative decisions.
+Other: A catch-all category for case types that do not fit into the above categories.
+
+
+
+
+Important Credentials for testing :
+
+Lawyer:
+
+id: abc
+pass: abc
+
+
+
+id: pqr
+pass : pqr
+
+
+
+
+judge :
+
+
+id : udbhav
+pass: udbhav
+
+
+id : ved 
+pass: ved 

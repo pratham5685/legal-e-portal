@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>User Registration</h1>
+  <form action="/register" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <label for="role">Role:</label>
+    <select id="role" name="role" required>
+      <option value="Court Staff">Court Staff</option>
+      <option value="Parties Involved">Parties Involved</option>
+      <option value="Lawyer">Lawyer</option>
+      <option value="Judge">Judge</option>
+    </select><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

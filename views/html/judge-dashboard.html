@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judge Dashboard</title>
+    <style>
+        /* Add your CSS styles for the Judge Dashboard here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .case-details {
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        /* Customize these styles further as needed */
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Judge Dashboard</h1>
+
+    <!-- Display the list of cases assigned to the judge here -->
+    <h2>Assigned Cases</h2>
+    <ul>
+        <% cases.forEach(function(caseItem) { %>
+            <li>
+                <div class="case-details">
+                    <h3>Case Number: <%= caseItem.caseNumber %></h3>
+                    <p>Parties Involved: <%= caseItem.partiesInvolved.join(', ') %></p>
+                    <p>Case Type: <%= caseItem.caseType %></p>
+                    <p>Case Status: <%= caseItem.caseStatus %></p>
+                    <!-- Add more case details here -->
+
+                    <!-- Assigned Lawyer -->
+                    <p>Assigned Lawyer: <%= caseItem.assignedLawyer %></p>
+
+                    <!-- Upcoming Hearing Dates -->
+                    <h4>Upcoming Hearing Dates</h4>
+                    <ul>
+                        <% caseItem.hearingDates.forEach(function(hearingDate) { %>
+                            <li><%= hearingDate.toDateString() %></li>
+                        <% }); %>
+                    </ul>
+
+                    <!-- Case History -->
+                    <h4>Case History</h4>
+                    <ul>
+                        <% caseItem.caseHistory.forEach(function(event) { %>
+                            <li>
+                                <p>Timestamp: <%= event.timestamp.toDateString() %></p>
+                                <p>Event: <%= event.event %></p>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            </li>
+        <% }); %>
+    </ul>
+
+    <!-- You can add more elements and functionality as needed -->
+</body>
+</html>
