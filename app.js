@@ -1,5 +1,5 @@
 // <-------- Main Application File for the E-Portal Project ------------------------------------------------>
-
+console.log("hello world"); // v2 v2ersion
 // Declare loggedInJudgeUsername as a global variable
 let loggedInJudgeUsername = '';
 const express = require('express');
