@@ -10,4 +10,10 @@ all the available judges and lawyers in it database System.
 
 Judge Dashboard Snippet : ![image](https://github.com/pratham5685/legal-e-portal/assets/93913808/85fe3f47-8649-4a2e-ad62-90674cdc1330)
 
+Court-staff Dashboard formely as Government Officials Dashboard : ![image](https://github.com/pratham5685/legal-e-portal/assets/93913808/53f7f997-d7fc-4338-aaf5-9f6859d0edb3)
+
+Case Listings :  ![image](https://github.com/pratham5685/legal-e-portal/assets/93913808/522fc45d-0e6a-41da-ab2f-50e8a057c2a6)
+
+Availabilities of members : ![image](https://github.com/pratham5685/legal-e-portal/assets/93913808/d49ac054-cedb-4cde-a43d-ca48d723f3d1)
+
 
